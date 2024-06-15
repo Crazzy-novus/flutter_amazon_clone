@@ -5,7 +5,7 @@ import AdminRoute from './routes/admin.js';
 import ProductRoute from './routes/product.js';
 import UserRoute from './routes/user.js';
 
-const PORT = 3000;
+const PORT = process.env.PORT||3000;
 const server = express();
 server.use(express.json());
 
@@ -33,7 +33,7 @@ server.use((obj, req, res, next) => {
 // Mongodb Connection
 const ConnetMongoDB = async () => {
     try {
-        const conn = await mongoose.connect("mongodb://localhost:27017/Flutter_amazon_clone");
+        const conn = await mongoose.connect("mongodb+srv://duraivignesh:1234@meptrix.cm65kmf.mongodb.net/?retryWrites=true&w=majority&appName=flutter_amazon_clone");
         console.log('DB connected !!!!!!!!!!!!!!!');
     } catch (error) { 
        console.error('Error: ', error.message);
