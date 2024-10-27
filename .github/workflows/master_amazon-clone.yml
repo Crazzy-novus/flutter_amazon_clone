@@ -6,7 +6,7 @@ name: Build and deploy Node.js app to Azure Web App - amazon-clone
 on:
   push:
     branches:
-      - master
+      - final
   workflow_dispatch:
 
 jobs:
