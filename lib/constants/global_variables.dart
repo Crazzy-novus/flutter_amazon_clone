@@ -1,6 +1,9 @@
 // Class To have all static variables
 import 'package:flutter/material.dart';
-String uri = 'http://192.168.102.131:3000';
+
+
+String uri = 'https://flutter-amazon-clone.azurewebsites.net';
+
 
 class GlobalVariables {
   static const appBarGradient = LinearGradient(
